@@ -27,13 +27,15 @@
 **PersonaGustos**
 ```json
 {
-    id : string
-    idPersona : string
+    id : string,
+    idPersona : string,
     gustosEtiquetas : [{
         etiqueta : string,
         contador : int
-        }] 
-    listaNoRecomendar : [{etiqueta: String, idArticulos: [id:String, ...]}]
+        }],
+    listaNoRecomendar : [
+        {etiqueta: String,
+        idArticulos: [id:String, ...]}]
 }
 ```
 
