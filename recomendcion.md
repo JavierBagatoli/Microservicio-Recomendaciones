@@ -25,7 +25,8 @@
 ### Modelo de datos
 
 **PersonaGustos**
-    ```id : string
+    ```json
+    id : string
     idPersona : string
     gustosEtiquetas : [{
         etiqueta : string,
