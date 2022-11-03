@@ -25,13 +25,13 @@
 ### Modelo de datos
 
 **PersonaGustos**
-    -id : string
-    -idPersona : string
-    -gustosEtiquetas : [{
-        -etiqueta : string,
-        -contador : int
-        -}] 
-    -listaNoRecomendar : [{etiqueta: String, idArticulos: [id:String, ...]}]
+    ```id : string
+    idPersona : string
+    gustosEtiquetas : [{
+        etiqueta : string,
+        contador : int
+        }] 
+    listaNoRecomendar : [{etiqueta: String, idArticulos: [id:String, ...]}]```
 
 ### Interfaz REST
 
