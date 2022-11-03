@@ -25,8 +25,8 @@
 ### Modelo de datos
 
 **PersonaGustos**
-    ```json
-    {
+```json
+{
     id : string
     idPersona : string
     gustosEtiquetas : [{
@@ -34,7 +34,8 @@
         contador : int
         }] 
     listaNoRecomendar : [{etiqueta: String, idArticulos: [id:String, ...]}]
-    }```
+}
+```
 
 ### Interfaz REST
 
