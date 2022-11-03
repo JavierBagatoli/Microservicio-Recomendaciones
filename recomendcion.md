@@ -37,7 +37,7 @@ listaNoRecomendar : [idArticulo]
 
 **Recomendar articulos**
 
-`GET /v1/recomendacion/{IdUsuario}`
+`GET /{IdUsuario}`
 
 *Headers*
 Authorization: Bearer token
@@ -46,13 +46,13 @@ Authorization: Bearer token
 `200 OK` articulos recomendados
 ```json
 {
-    "articulos" : ["idArticulo", "..."]
+    "articulos" : ["etiqueta", "..."]
 }
 ```
 
 **Recomendar por articulo relacionado**
 
-`GET /v1/recomendacion/{IdArticulo}`
+`GET /etiquetas/{etiqueta}`
 
 *Headers*
 Authorization: Bearer token
@@ -61,7 +61,7 @@ Authorization: Bearer token
 `200 OK` articulos recomendados
 ```json
 {
-    "articulos" : ["idArticulo", "..."]
+    "articulos" : ["etiqueta", "..."]
 }
 ```
 
@@ -75,7 +75,7 @@ body
 ```json
 {
     "id" : "231",
-    "idPersona" : "235498213",
+    "idUsuario" : "235498213",
     "etiquetas" : ["deporte", "neumaticos"]
 }
 ```
@@ -89,7 +89,7 @@ body
 ```json
 {
     "id" : "231",
-    "idPersona" : "235498213",
+    "idUsuario" : "235498213",
     "idArticulo" : "321321"
 }
 ```
