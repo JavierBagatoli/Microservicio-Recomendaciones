@@ -78,6 +78,8 @@ Authorization: Bearer token
 
 Recibe a las `etiquetas` que incrementara
 
+- cola: microRecomendaciones - incrementarEtiqueta
+- Tipo suscripcion: 
 body
 ```json
 {
@@ -91,6 +93,9 @@ body
 **Dejar de recomendar articulo**
 
 Recibe el IdArticulo que dejara de recomendarse
+
+- Cola: microRecomendaciones - dejarDeRecomendar
+- Tipo suscripcion
 
 body
 ```json
