@@ -16,12 +16,13 @@
      * si alguno de los articulos esta entre los no recomendados del usuario se descarta.
 
 #### CU: Dejar de recomendar articulo
-
+ - Camino normla:
     * En la GUI cada articulo tendra la oportunidad de dejar de recomendar, lo incluye en un lista de no recomendados.
     * Si los articulos comparten etiqueta, se le restara puntaje a la etiqueta para que deje de ser recomendados.
 
 #### CU: Recomendar por articulo relacionado
-    -Al acceder al detalle de un articulo, la GUI enviara informacion del articulo como nombre y etiquetas para que el microservicio de recomendaciones pida a articulos elementos similares.
+ - Camino normla:
+    * Al acceder al detalle de un articulo, la GUI enviara informacion del articulo como nombre y etiquetas para que el microservicio de recomendaciones pida a articulos elementos similares.
 
 ### Modelo de datos
 
