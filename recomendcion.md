@@ -57,9 +57,9 @@ Authorization: Bearer token
 }
 ```
 
-**Recomendar por articulo relacionado**
+**No Recomendar por articulo relacionado**
 
-`GET /etiquetas/{etiqueta}`
+`GET /{idUsuario}/{etiqueta}`
 
 *Headers*
 Authorization: Bearer token
