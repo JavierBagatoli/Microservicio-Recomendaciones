@@ -2,6 +2,9 @@
 
 ### Casos de uso
 
+
+<img src="https://www.plantuml.com/plantuml/png/VT2_oi8m50NmFKznoVHzGmTjfoAbe8k3Yz07k2ONYQI9vi-J-GY-c5V5j2AujUIS7oVfOyAGycX5kukmneJM7tqBLTN1tn1fyGyjo9Nff91RfmADvBW1bCmbKy88XnpvIwC4_dbLn1FRa_ASrgZCxUecSbb84BA40l0EexBryIrnyYVK5EZ3EVl9Wa2MQzwXzeLj7WE7c36OsKthcRQX4mRG1E5xNc5gPaJFX_nwTm00" alt="Modelo UML">
+
 #### CU: Incrementar etiquetas busqueda
 - Precondicion: El usuario esta registrado y logeado
 
