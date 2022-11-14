@@ -9,22 +9,21 @@
 - Precondicion: El usuario esta registrado y logeado
 
 - Camino normal:
-    - Al acceder a los detalles de un articulo, el servicio de catalogo incrementa un contador de las etiquetas que tiene el articulo en el microservicio de de Recomendaciones (IdPersona, etiqutas, busquedas)
+    - Cuando el usuario ingresa a los detalles de un producto que encontró por búsqueda o sugerencia, el microservicio traerá los detalles correspondientes de este, pero para el objetivo del microservicio de recomendaciones también enviara una petición el dato de la etiqueta y el idUsuario a una cola donde el microservicio de recomendaciones incrementará el contador interno.
 
 
 #### CU: Recomendar articulos
 - Camino normal:
-    * La GUI enviara una llamada al microservicio de Recomendaciones, encontrara las etiquetas mas buscadas y las devolvera para que la GUI pueda trabajar.
-     * si alguno de los articulos esta entre los no recomendados del usuario se descarta.
+    * Cuando el usuario ingresa el menú principal del e-comerce, se necesita tener elementos para recomendar, para esto la GUI toma le ID de usuario y hace una llamada al microservicio de recomendaciones para obtener una lista de las 3 etiquetas con mayor favoritismo.
 
 #### CU: Dejar de recomendar articulo
  - Camino normal:
     * En la GUI cada articulo tendra la oportunidad de dejar de recomendar, lo incluye en un lista de no recomendados.
     * Si los articulos comparten etiqueta, se le restara puntaje a la etiqueta para que deje de ser recomendados.
 
-#### CU: Recomendar por articulo relacionado
+#### CU: No recomendar por etiqueta relacionada
  - Camino normla:
-    * Al acceder al detalle de un articulo, la GUI enviara las etiquetas para que el microservicio de recomendaciones devuelva si existen que artculos no se mostraran.
+    * Cuando se acceda a los detalles de algún artículo, se estima que la GUI muestre artículos similares al que estaba buscando el usuario, pero para evitar que aparezcan productos no deseados la GUI enviara una petición con el idUsuario y la etiqueta para poder conocer que artículos no debe mostrar
 
 ### Modelo de datos
 
@@ -60,7 +59,7 @@ Authorization: Bearer token
 }
 ```
 
-**No Recomendar por articulo relacionado**
+**No recomendar por etiqueta relacionada**
 
 `GET /{idUsuario}/{etiqueta}`
 
